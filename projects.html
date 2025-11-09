@@ -1,33 +1,63 @@
 <!DOCTYPE html>
-<div class="project-tech">
-<span class="tech-tag">JavaScript</span>
-<span class="tech-tag">HTML</span>
-<span class="tech-tag">CSS</span>
-</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Projects</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
 
-   <div class="project-grid ">
-            <div class="project-card">
-                <h3>Bike Showroom Management System</h3>
-                <p>A DBMS‑based mini‑project managing bike sales and inventory.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">PHP</span>  
-                    <span class="tech-tag">MySql</span>
-                </div>
-            </div>
+  <!-- Main Content -->
+  <main class="container">
+    <h1>My Projects</h1>
 
-<h3>Portfolio Website</h3>
-<p>Personal portfolio to showcase projects and skills.</p>
-<div class="project-tech">
-<span class="tech-tag">JavaScript</span>
-<span class="tech-tag">HTML</span>
-<span class="tech-tag">CSS</span>
-</div>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <a href="https://dice-game-one-brown.vercel.app/" target="_blank" class="project-card" style="text-decoration: none;">
+        <h3>Bike Showroom Management System</h3>
+        <p>A DBMS-based mini-project managing bike sales and inventory.</p>
+        <div class="project-tech">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">MySQL</span>
+        </div>
+      </a>
 
-</div>
-</main>
+      <!-- Project 2 -->
+      <a href="https://web-lab-portfolio-ashy.vercel.app/" target="_blank" class="project-card" style="text-decoration: none;">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio to showcase projects and skills.</p>
+        <div class="project-tech">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+        </div>
+      </a>
+    </div>
+  </main>
 
+  <!-- Footer -->
+  <footer class="container">
+    <p>&copy; <span id="year"></span> Sunil Bannatti</p>
+  </footer>
 
-<script src="./script.js" defer></script>
+  <!-- Scripts -->
+  <script src="./script.js" defer></script>
+  <script>
+    // fallback: auto-update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
